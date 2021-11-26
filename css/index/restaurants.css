@@ -44,6 +44,16 @@ img {
   margin: 0;
 }
 
-.restaurant-card-content--container {
+
+.restaurant-card-bottom-container {
   padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: transparent;
+}
+
+.restaurant-card-content-container {
+  display: flex;
+  flex-direction: column;
 }

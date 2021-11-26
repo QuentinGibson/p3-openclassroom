@@ -1,4 +1,26 @@
 footer {
   background-color: #4a4a4a;
+  color: white;
 }
 
+.logo-white {
+  stroke: white;
+  fill: white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-menu-item {
+  font-weight: 700;
+}
+
+footer i {
+  width: 20px;
+}
+
+.footer-container {
+  padding: 40px 20px;
+}
