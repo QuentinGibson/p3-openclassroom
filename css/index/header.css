@@ -1,4 +1,6 @@
 header {
+  padding: 20px 0;
+  box-shadow: 0 0 10px 0px var(--box-shadow);
   display: flex;
   justify-content: center;
   align-items: center;

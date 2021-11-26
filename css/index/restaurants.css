@@ -25,6 +25,8 @@
 .restaurant-card-list-container {
   display: flex;
   padding: 0;
+  flex-direction: column;
+  list-style-type: none;
 }
 
 

@@ -33,3 +33,8 @@
 .step-content-container {
   padding: 10px
 }
+
+.step-content {
+  display: inline;
+}
+
