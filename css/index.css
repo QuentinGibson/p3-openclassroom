@@ -1,0 +1,25 @@
+@import "index/header.css";
+@import "index/location.css";
+@import "index/cta.css";
+@import "index/restaurants.css";
+@import "index/works.css";
+@import "index/footer.css";
+
+h1, h2, h3, h4, h5, h6,
+a, p, span, button {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+
+.section-container {
+}
+
+.section-heading{
+  font-weight: 700;
+  font-size: 24px;
+}

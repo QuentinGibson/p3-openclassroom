@@ -1,0 +1,35 @@
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-card {
+  align-items: center;
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 0 3px 6px 2px rgb(0 0 0 / 10%);
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.steps {
+  padding: 0;
+}
+
+.steps li::marker {
+  content: none;
+}
+
+.number {
+  background-color: purple;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: white;
+}
+
+.step-content-container {
+  padding: 10px
+}

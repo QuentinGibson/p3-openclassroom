@@ -1,0 +1,49 @@
+.restaurant-card-list-container li {
+  width: 100%;
+}
+
+.restaurant-card {
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+  border-radius: 17px;
+  margin: 20px 0;
+}
+
+.restaurant-card, .restaurant-card-link {
+  width: inherit
+}
+.new {
+  display: none;
+}
+
+.restaurant-image-container {
+  display: flex;
+  overflow: hidden;
+  border-radius: 17px 17px 0 0;
+  height: 230px;
+}
+
+.restaurant-card-list-container {
+  display: flex;
+  padding: 0;
+}
+
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant-title {
+  font-weight: 800;
+  font-size: 22px;
+  margin: 0;
+}
+
+.restaurant-city {
+  font-size: 22px;
+  margin: 0;
+}
+
+.restaurant-card-content--container {
+  padding: 20px 20px;
+}

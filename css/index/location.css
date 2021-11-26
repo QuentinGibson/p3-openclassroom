@@ -1,0 +1,8 @@
+#location {
+  background-color: var(--grey-background);
+}
+
+.location-text {
+  text-align: center;
+  color: var(--text-dark-grey);
+}
