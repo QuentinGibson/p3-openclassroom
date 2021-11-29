@@ -1,63 +1,182 @@
 @import "index/header.css";
-@import "menu/main-menu.css";
 @import "index/footer.css";
 
-i.fa-arrow-left {
-  position: absolute;
-  justify-self: flex-start;
-  left: 40px;
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-i.fa-heart:hover {
-  color: purple;
-  stroke-width: 0;
-  stroke: transparent;
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-i.fa-heart {
-  color: transparent;
-  stroke-width: 1px;
-  stroke:gray;
-  transition: all 0.3s ease-in;
-
+:root {
+  --entry: 1s;
 }
-
-h1, h2, h3, h4, h5, h6,
-a, p, span, button {
-  font-family: 'Raleway', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: initial;
-}
-
-img {
+.restaurant-image {
   width: 100%;
+  z-index: 1;
 }
 
-#menu {
-  border-radius: 55px 55px 0 0;
+
+.menu {
   margin-top: -100px;
   z-index: 2;
-  background-color: #e6e6e6;
+  background: #efefef;
   position: relative;
+  border-radius: 40px 40px 0 0;
 }
 
-.restaurant-title {
+.menu-title-container {
+  padding-top: 150px;
+  position: relative;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
 }
 
-.restaurant-title h1 {
+.restaurant-name {
+  font-size: 24px;
+  font-family: 'Open sans', sans-serif;
+}
+
+
+.menu-title-container i.fa.fa-heart:hover {
+  color: purple;
+  -webkit-text-stroke-width: 0;
+}
+.menu-title-container i.fa.fa-heart {
+  transition: all 0.3s ease-in;
+  font-size: 20px;
+  color: transparent;
+  -webkit-text-stroke-color: grey;
+  -webkit-text-stroke-width: 1px;
+}
+
+.menu-section {
+  padding: 20px 40px;
+}
+
+.menu-section-title {
+  text-transform: uppercase;
+}
+.menu-section-title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin-top: 10px;
+  background-color: teal;
+}
+
+.menu-section-items-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item-overlay {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.item-background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.menu-item {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 10px 0;
+  border-radius: 15px;
+  animation-duration: var(--entry);
+  animation-name: slideIn;
+  position: relative;
+}
+
+.menu-item:nth-of-type(2) {
+  animation-duration: calc(var(--entry) * 2);
+}
+
+.menu-item:nth-of-type(3) {
+  animation-duration: calc(var(--entry) * 3);
+}
+
+.item-title-container {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.item-title {
   margin: 0;
 }
 
-.fa-heart {
-  font-size: 30px;
-  color: transparent;
-  -webkit-text-stroke-color: gray;
-  -webkit-text-stroke-width: 1px;
+.item-desc-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-price {
+
+}
+
+.order-button-container {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.order-button {
+  background-color: purple;
+  color: white;
+  padding: 20px 100px;
+  border: 0;
+  border-radius: 50px;
+}
+
+.menu-item:hover .checkbox {
+  max-width: 200px;
+}
+
+.menu-item:hover i.fa-check-circle {
+  animation-name: spin;
+  animation-duration: 0.3s;
+}
+
+.checkbox {
+  transition: max-width 0.3s ease-in-out;
+  background: teal;
+  position: relative;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  max-width: 0;
+}
+
+.fa-check-circle {
+  color: white;
+}
+
+.item-details {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
 }
