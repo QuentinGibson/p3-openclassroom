@@ -2,7 +2,12 @@
   background-color: var(--grey-background);
 }
 
+#location i {
+  color: var(--text-dark-grey)
+}
+
 .location-text {
+  font-weight: 700;
   text-align: center;
   color: var(--text-dark-grey);
 }

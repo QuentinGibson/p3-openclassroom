@@ -10,24 +10,29 @@
   box-shadow: 0 3px 6px 2px rgb(0 0 0 / 10%);
   margin: 10px 0;
   padding: 10px;
+  height: 80px;
 }
 
 .steps {
   padding: 0;
 }
 
+
+
 .steps li::marker {
   content: none;
 }
 
 .number {
-  background-color: purple;
-  padding: 5px 10px;
-  display: flex;
+  background-color: var(--primary);
+  padding: 4px 8px;
+  display: inline;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
   color: white;
+  position: relative;
+  left: -20px;
 }
 
 .step-content-container {
@@ -36,5 +41,19 @@
 
 .step-content {
   display: inline;
+}
+
+.step-content-icon {
+  padding-right: 10px;
+}
+
+.step-content-icon, .step-content {
+  color: var(--text-dark-grey);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#works li:hover .step-content-icon {
+  color: var(--primary);
 }
 

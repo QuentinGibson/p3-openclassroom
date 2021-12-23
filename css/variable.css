@@ -1,4 +1,9 @@
 :root {
   --grey-background: #d2d2d2;
   --box-shadow: rgba(0, 0, 0, 0.2);
+  --primary: #9356DC;
+  --secondary: #FF79DA;
+  --tertiary: #99E2D0;
+  --text-dark-grey: #313131;
+  --light-grey-text: #5a5a5a;
 }
