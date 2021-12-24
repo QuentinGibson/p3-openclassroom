@@ -3,6 +3,8 @@
   flex-direction: column;
 }
 
+
+
 .step-card {
   align-items: center;
   display: flex;
@@ -57,3 +59,10 @@
   color: var(--primary);
 }
 
+
+@media (min-width: 1080px) {
+  .steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
