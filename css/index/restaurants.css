@@ -77,9 +77,37 @@ img {
   color: var(--primary);
 }
 
+.loading-screen {
+  background: #FFFFFF;
+  position: relative;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+}
+
+.restaurant-card:hover {
+  background-color: #f2f2f2;
+}
+
 .restaurant-card .new {
   z-index: 1;
   position: absolute;
   background: white;
   padding: 10px 20px;
+}
+
+@media (min-width: 1200px){
+
+  .restaurant-card-list-container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .restaurant-card-list-container li  {
+    width: 49%;
+    display: inline-block;
+  }
+
+  .restaurant-card-link {
+    width: 100%;
+  }
 }
