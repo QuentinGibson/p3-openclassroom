@@ -1,4 +1,6 @@
 :root {
+  --title-font: 'Shrikhand', cursive;
+  --body-font: 'Roboto', sans-serif;
   --grey-background: #d2d2d2;
   --box-shadow: rgba(0, 0, 0, 0.2);
   --primary: #9356DC;
@@ -6,4 +8,5 @@
   --tertiary: #99E2D0;
   --text-dark-grey: #313131;
   --light-grey-text: #5a5a5a;
+  --purple-gradient: linear-gradient(180deg, #ec73da 0%, #a25bdc 100%); 
 }

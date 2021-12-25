@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 
 .menu {
-  margin-top: -100px;
+  margin-top: -60px;
   z-index: 2;
   background: #efefef;
   position: relative;
@@ -53,8 +53,8 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .restaurant-name {
-  font-size: 24px;
-  font-family: 'Open sans', sans-serif;
+  font-family: var(--title-font);
+  font-size: 34px;
 }
 
 
@@ -153,7 +153,8 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .order-button {
-  background-color: var(--primary);
+  background: var(--purple-gradient);
+  font-family: var(--body-font);
   color: white;
   padding: 20px 100px;
   border: 0;
