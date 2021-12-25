@@ -1,3 +1,4 @@
+@import "variable.css";
 @import "index/header.css";
 @import "index/footer.css";
 
@@ -146,7 +147,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .order-button-container {
-  margin: 30px 0;
+  padding: 30px 0;
   display: flex;
   justify-content: center;
 }
