@@ -43,10 +43,13 @@ h1, h2, h3, h4, h5, h6, p, span {
   border-radius: 40px 40px 0 0;
 }
 
+.menu-container {
+  padding: 0 20px;
+}
+
 .menu-title-container {
-  padding-top: 150px;
+  padding-top: 50px;
   position: relative;
-  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,24 +61,25 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 
-.menu-title-container i.fa.fa-heart:hover {
+.menu-title-container .menu-title-icon {
   color: var(--primary);
   -webkit-text-stroke-width: 0;
 }
-.menu-title-container i.fa.fa-heart {
+.menu-title-container .menu-title-icon {
   transition: all 0.3s ease-in;
-  font-size: 20px;
+  font-size: 24px;
   color: transparent;
   -webkit-text-stroke-color: grey;
   -webkit-text-stroke-width: 1px;
 }
 
 .menu-section {
-  padding: 20px 40px;
+  padding: 20px 0;
 }
 
 .menu-section-title {
   text-transform: uppercase;
+  font-weight: 300;
 }
 .menu-section-title::after {
   content: "";
@@ -83,10 +87,11 @@ h1, h2, h3, h4, h5, h6, p, span {
   width: 40px;
   height: 2px;
   margin-top: 10px;
-  background-color: teal;
+  background-color: var(--tertiary);
 }
 
 .menu-section-items-container {
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -134,16 +139,26 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .item-title {
+  font-family: var(--body-font);
+  font-size: 22px;
   margin: 0;
 }
 
 .item-desc-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+}
+
+.item-desc {
+  color: var(--light-grey-text);
+  font-size: 16px;
+  margin: 0;
 }
 
 .item-price {
-
+  font-weight: 700;
+  margin: 0;
 }
 
 .order-button-container {
