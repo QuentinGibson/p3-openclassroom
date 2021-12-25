@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .menu-title-container {
-  padding-top: 50px;
+  padding-top: 30px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   -webkit-text-stroke-width: 0;
 }
 .menu-title-container .menu-title-icon {
+  padding-right: 15px;
   transition: all 0.3s ease-in;
   font-size: 24px;
   color: transparent;
@@ -167,7 +168,10 @@ h1, h2, h3, h4, h5, h6, p, span {
   justify-content: center;
 }
 
+
+
 .order-button {
+  font-weight: 700;
   background: var(--purple-gradient);
   font-family: var(--body-font);
   color: white;
