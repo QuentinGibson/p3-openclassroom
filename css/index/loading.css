@@ -4,15 +4,15 @@
   justify-content: center;
   align-items: center;
   background: white;
-  position: fixed;
-  display: none;
-  opacity: 0;
+  position: absolute;
+  display: flex;
+  transform: translateY(-150vh);
+  opacity: 1;
   z-index: 2;
-  animation: fadeOut 2s ease-in-out;
-  animation-iteration-count: 1;
+  animation: 3s ease-in 0s 1 fadeOut;
 }
 .spinner {
-  animation: rotate 2s linear;
+  animation: 2s linear rotate;
   z-index: 2;
   position: absolute;
   top: 50%;
@@ -25,18 +25,19 @@
 .spinner .path {
   stroke: #93bfec;
   stroke-linecap: round;
-  animation: dash 1.5s ease-in-out infinite;
+  animation: 1.5s ease-in-out infinite dash;
   animation-iteration-count: 2;
 }
 
 @keyframes fadeOut {
   0% {
-    display: block;
-    opacity: 1;
+    transform: translate(0, 0)
+  }
+  70% {
+    transform: translate(0, 0)
   }
   100% {
-    opacity: 0;
-    display: none;
+    transform: translateY(-150vh)
   }
 }
 
