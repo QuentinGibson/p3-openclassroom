@@ -11,9 +11,6 @@
 .restaurant-card, .restaurant-card-link {
   width: inherit
 }
-.new {
-  display: none;
-}
 
 .restaurant-image-container {
   position:relative;
@@ -103,12 +100,6 @@ img {
   background-color: #f2f2f2;
 }
 
-.restaurant-card .new {
-  z-index: 1;
-  position: absolute;
-  background: white;
-  padding: 10px 20px;
-}
 
 @media (min-width: 1200px){
 
