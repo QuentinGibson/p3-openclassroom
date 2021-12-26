@@ -8,10 +8,7 @@ header {
 }
 
 .header-left-arrow {
-  position: absolute;
-  left: 9vw;
   font-size: 30px;
-  transform: translateY(-2px);
 }
 
 .logo {

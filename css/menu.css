@@ -212,8 +212,19 @@ h1, h2, h3, h4, h5, h6, p, span {
     padding: 10px 20px;
 }
 
+.left-link {
+  color: black;
+  position: absolute;
+  left: 9vw;
+}
+
+.left-link:visited {
+  color: black;
+}
+
 @media (min-width: 768px) {
   .restaurant-image-section {
     height: 450px;
   }
 }
+
