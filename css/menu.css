@@ -61,11 +61,11 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 
-.menu-title-container .menu-title-icon {
+.menu-title-container .title-icon:hover {
   color: var(--primary);
   -webkit-text-stroke-width: 0;
 }
-.menu-title-container .menu-title-icon {
+.menu-title-container .title-icon {
   padding-right: 15px;
   transition: all 0.3s ease-in;
   font-size: 24px;
