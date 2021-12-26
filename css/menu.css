@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   transition: max-width 0.3s ease-in-out;
   background: var(--tertiary);
   position: relative;
-  width: 40px;
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,6 +203,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .fa-check-circle {
   color: white;
+  font-size: 20px;
 }
 
 .item-details {
