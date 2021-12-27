@@ -19,7 +19,7 @@
     background-image: var(--purple-gradient);
     display: block;
     margin: 0 auto;
-    width: 350px;
+    max-width: 350px;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1.5px;
