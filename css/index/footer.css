@@ -15,7 +15,7 @@ footer ul {
   padding: 0;
 }
 
-.footer-menu-item {
+.footer__menu-item {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: white;
@@ -30,6 +30,6 @@ footer i {
   width: 20px;
 }
 
-.footer-container {
+.footer__container {
   padding: 40px 20px;
 }

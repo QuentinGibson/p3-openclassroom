@@ -46,11 +46,11 @@ h1, h2, h3, h4, h5, h6, p, span {
   border-radius: 40px 40px 0 0;
 }
 
-.menu-container {
+.menu__container {
   padding: 0 20px;
 }
 
-.menu-title-container {
+.menu__title-container {
   padding-top: 30px;
   position: relative;
   display: flex;
@@ -58,18 +58,18 @@ h1, h2, h3, h4, h5, h6, p, span {
   align-items: center;
 }
 
-.restaurant-name {
+.menu__restaurant-name {
   font-family: var(--title-font);
   font-size: 34px;
 }
 
 
-.menu-title-container .title-icon:hover {
+.menu__title-container .title-icon:hover {
   color: var(--primary);
   -webkit-text-stroke-width: 0;
 }
 
-.menu-title-container .title-icon {
+.menu__title-container .title-icon {
   padding-right: 15px;
   transition: all 0.3s ease-in;
   font-size: 24px;
@@ -78,16 +78,16 @@ h1, h2, h3, h4, h5, h6, p, span {
   -webkit-text-stroke-width: 1px;
 }
 
-.menu-section {
+.course {
   padding: 20px 0;
 }
 
-.menu-section-title {
+.course__title {
   text-transform: uppercase;
   font-weight: 300;
 }
 
-.menu-section-title::after {
+.course__title::after {
   content: "";
   display: block;
   width: 40px;
@@ -96,13 +96,13 @@ h1, h2, h3, h4, h5, h6, p, span {
   background-color: var(--tertiary);
 }
 
-.menu-section-items-container {
+.course__items-container {
   padding: 0;
   display: flex;
   flex-direction: column;
 }
 
-.menu-item-overlay {
+.item-overlay {
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   position: relative;
 }
 
-.menu-item {
+.item {
   background: white;
   display: flex;
   flex-direction: row;
@@ -127,19 +127,19 @@ h1, h2, h3, h4, h5, h6, p, span {
   position: relative;
 }
 
-.menu-item:nth-of-type(2) {
+.item:nth-of-type(2) {
   animation-duration: calc(var(--entry) * 2);
 }
 
-.menu-item:nth-of-type(3) {
+.item:nth-of-type(3) {
   animation-duration: calc(var(--entry) * 3);
 }
 
-.menu-item:nth-of-type(4) {
+.item:nth-of-type(4) {
   animation-duration: calc(var(--entry) * 4);
 }
 
-.item-title-container {
+.item__title-container {
   font-weight: 700;
   font-size: 20px;
 }
@@ -185,11 +185,11 @@ h1, h2, h3, h4, h5, h6, p, span {
   border-radius: 50px;
 }
 
-.menu-item:hover .checkbox {
+.item:hover .checkbox {
   max-width: 200px;
 }
 
-.menu-item:hover i.fa-check-circle {
+.item:hover i.fa-check-circle {
   animation-name: spin;
   animation-duration: 0.3s;
 }
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   font-size: 20px;
 }
 
-.item-details {
+.item__details {
   width: 100%;
   display: inline-block;
   padding: 10px 20px;

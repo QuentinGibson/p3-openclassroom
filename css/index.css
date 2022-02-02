@@ -18,11 +18,11 @@ a {
 }
 
 
-.section-container {
+.container {
   padding: 10px 20px;
 }
 
-.section-heading{
+.section-heading {
   font-weight: 700;
   font-size: 24px;
 }

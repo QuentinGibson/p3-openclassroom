@@ -1,9 +1,8 @@
-.steps {
+.works__steps {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
-
-
 
 .step-card {
   align-items: center;
@@ -15,17 +14,11 @@
   height: 80px;
 }
 
-.steps {
-  padding: 0;
-}
-
-
-
-.steps li::marker {
+.works__steps li::marker {
   content: none;
 }
 
-.number {
+.step-card__number {
   background-color: var(--primary);
   padding: 4px 8px;
   display: inline;
@@ -37,31 +30,30 @@
   left: -20px;
 }
 
-.step-content-container {
+.step-card__content-container {
   padding: 10px
 }
 
-.step-content {
+.step-card__content {
   display: inline;
 }
 
-.step-content-icon {
+.step-card__content-icon {
   padding-right: 10px;
 }
 
-.step-content-icon, .step-content {
+.step-card__content-icon, .step-card__content {
   color: var(--text-dark-grey);
   font-size: 20px;
   font-weight: 700;
 }
 
-#works li:hover .step-content-icon {
+#works li:hover .step-card__content-icon {
   color: var(--primary);
 }
 
-
 @media (min-width: 1080px) {
-  .steps {
+  .work__steps {
     flex-direction: row;
     justify-content: space-between;
   }

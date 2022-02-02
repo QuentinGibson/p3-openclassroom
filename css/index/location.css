@@ -6,8 +6,16 @@
   color: var(--text-dark-grey)
 }
 
-.location-text {
+.location__text {
   font-weight: 700;
   text-align: center;
   color: var(--text-dark-grey);
+  font-size: 12px;
+}
+
+.location-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
