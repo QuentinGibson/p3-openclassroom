@@ -144,30 +144,30 @@ h1, h2, h3, h4, h5, h6, p, span {
   font-size: 20px;
 }
 
-.item-title {
+.item__title {
   font-family: var(--body-font);
   font-size: 22px;
   margin: 0;
 }
 
-.item-desc-container {
+.item__desc-container {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.item-desc {
+.item___desc {
   color: var(--light-grey-text);
   font-size: 16px;
   margin: 0;
 }
 
-.item-price {
+.item___price {
   font-weight: 700;
   margin: 0;
 }
 
-.order-button-container {
+.order__button-container {
   padding: 30px 0;
   display: flex;
   justify-content: center;
