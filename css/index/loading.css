@@ -1,16 +1,17 @@
 .loading-container {
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   justify-content: center;
   align-items: center;
   background: white;
-  position: absolute;
+  position: fixed;
   display: flex;
-  transform: translateY(-150vh);
+  transform: translateY(-200vh);
   opacity: 1;
   z-index: 2;
   animation: 3s ease-in 0s 1 fadeOut;
 }
+
 .spinner {
   animation: 2s linear rotate;
   z-index: 2;
@@ -22,6 +23,7 @@
   height: 50px;
   animation-iteration-count: 2;
 }
+
 .spinner .path {
   stroke: #93bfec;
   stroke-linecap: round;
@@ -31,13 +33,15 @@
 
 @keyframes fadeOut {
   0% {
-    transform: translate(0, 0)
+    transform: translateY(-30)
   }
+
   70% {
-    transform: translate(0, 0)
+    transform: translateY(-30)
   }
+
   100% {
-    transform: translateY(-150vh)
+    transform: translateY(-200vh)
   }
 }
 
@@ -46,18 +50,20 @@
     transform: rotate(360deg);
   }
 }
+
 @keyframes dash {
   0% {
     stroke-dasharray: 1, 150;
     stroke-dashoffset: 0;
   }
+
   50% {
     stroke-dasharray: 90, 150;
     stroke-dashoffset: -35;
   }
+
   100% {
     stroke-dasharray: 90, 150;
     stroke-dashoffset: -124;
   }
 }
-
