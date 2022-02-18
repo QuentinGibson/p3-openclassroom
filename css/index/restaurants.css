@@ -57,7 +57,7 @@ img {
 }
 
 .restaurant-card .restaurant-card-icon:hover {
-  color: purple;
+  color: #9356DC;
   -webkit-text-stroke-color: transparent;
   -webkit-text-stroke-width: 0;
 }
