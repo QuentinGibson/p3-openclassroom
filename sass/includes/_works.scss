@@ -31,7 +31,7 @@
 }
 
 .step-card__content-container {
-  padding: 10px
+  padding: 10px;
 }
 
 .step-card__content {
@@ -42,14 +42,15 @@
   padding-right: 10px;
 }
 
-.step-card__content-icon, .step-card__content {
-  color: var(--text-dark-grey);
+.step-card__content-icon,
+.step-card__content {
+  color: $text-dark-grey;
   font-size: 20px;
   font-weight: 700;
 }
 
 #works li:hover .step-card__content-icon {
-  color: var(--primary);
+  color: $primary;
 }
 
 @media (min-width: 1080px) {

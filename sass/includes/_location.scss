@@ -1,15 +1,15 @@
 #location {
-  background-color: var(--grey-background);
+  background-color: $grey-background;
 }
 
 #location i {
-  color: var(--text-dark-grey)
+  color: $text-dark-grey;
 }
 
 .location__text {
   font-weight: 700;
   text-align: center;
-  color: var(--text-dark-grey);
+  color: $text-dark-grey;
   font-size: 12px;
 }
 

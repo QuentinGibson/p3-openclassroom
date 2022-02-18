@@ -9,15 +9,14 @@
 }
 
 .cta__sub-text {
-  color: var(--light-grey-text);
+  color: $light-grey-text;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
 }
 
-
 .cta__button {
-  background-image: var(--purple-gradient);
+  background-image: --purple-gradient;
   display: block;
   margin: 0 auto;
   max-width: 350px;
@@ -30,7 +29,6 @@
   color: white;
   text-align: center;
 }
-
 
 .fa-map-marker {
   margin-top: -10px;

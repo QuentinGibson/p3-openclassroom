@@ -28,8 +28,15 @@
   --entry: 1s;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Roboto", sans-serif;
 }
 
 .restaurant-image {
@@ -39,7 +46,6 @@ h1, h2, h3, h4, h5, h6, p, span {
   width: 100%;
   z-index: 1;
 }
-
 
 .menu {
   margin-top: -60px;
@@ -62,13 +68,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .menu__restaurant-name {
-  font-family: var(--title-font);
+  font-family: $title-font;
   font-size: 34px;
 }
 
-
 .menu__title-container .title-icon:hover {
-  color: var(--primary);
+  color: $primary;
   -webkit-text-stroke-width: 0;
 }
 
@@ -148,7 +153,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .item__title {
-  font-family: var(--body-font);
+  font-family: $body-font;
   font-size: 22px;
   margin: 0;
 }
@@ -166,7 +171,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: var(--light-grey-text);
+  color: $light-grey-text;
   font-size: 16px;
   margin: 0;
 }
@@ -182,16 +187,26 @@ h1, h2, h3, h4, h5, h6, p, span {
   justify-content: center;
 }
 
-
-
 .order-button {
   font-weight: 700;
-  background: var(--purple-gradient);
-  font-family: var(--body-font);
+  background: $purple-gradient;
+  font-family: $body-font;
   color: white;
   padding: 20px 100px;
   border: 0;
   border-radius: 50px;
+}
+
+.order-button:hover .order-button::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: darken(var($purple-gradient), 5);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .item:hover .checkbox {
@@ -205,7 +220,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .checkbox {
   transition: max-width 0.3s ease-in-out;
-  background: var(--tertiary);
+  background: $tertiary;
   position: relative;
   width: 80px;
   display: flex;
