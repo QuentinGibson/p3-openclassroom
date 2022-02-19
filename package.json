@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:sass": "sass sass/index.scss:css/index.css sass/menu.scss:css/menu.css",
     "watch:sass": "sass sass/index.scss:css/index.css sass/menu.scss:css/menu.css -w",
     "serve": "reload"
