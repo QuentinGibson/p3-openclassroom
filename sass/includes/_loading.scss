@@ -33,15 +33,15 @@
 
 @keyframes fadeOut {
   0% {
-    transform: translateY(-30)
+    transform: translateY(-30vh);
   }
 
   70% {
-    transform: translateY(-30)
+    transform: translateY(-30vh);
   }
 
   100% {
-    transform: translateY(-200vh)
+    transform: translateY(-200vh);
   }
 }
 

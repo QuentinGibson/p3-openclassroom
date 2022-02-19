@@ -1,22 +1,29 @@
-@import "variable.css";
-@import "index/loading.css";
-@import "index/header.css";
-@import "index/location.css";
-@import "index/cta.css";
-@import "index/restaurants.css";
-@import "index/works.css";
-@import "index/footer.css";
+@import "variable";
+@import "includes/loading";
+@import "includes/header";
+@import "includes/location";
+@import "includes/cta";
+@import "includes/restaurants";
+@import "includes/works";
+@import "includes/footer";
 
-h1, h2, h3, h4, h5, h6,
-a, p, span, button {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+button {
+  font-family: "Roboto", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: initial;
 }
-
 
 .container {
   padding: 10px 20px;

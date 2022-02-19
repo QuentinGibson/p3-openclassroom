@@ -1,0 +1,308 @@
+header {
+  padding: 20px 0;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header-left-arrow {
+  font-size: 30px;
+}
+
+footer {
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.logo-white {
+  height: 20px;
+  width: auto;
+  stroke: white;
+  fill: white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__menu-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+footer li {
+  margin: 10px 0;
+}
+
+footer i {
+  width: 20px;
+}
+
+.footer__container {
+  padding: 40px 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Roboto", sans-serif;
+}
+
+.restaurant-image {
+  height: 176%;
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu {
+  margin-top: -60px;
+  z-index: 2;
+  background: #efefef;
+  position: relative;
+  border-radius: 40px 40px 0 0;
+}
+
+.menu__container {
+  padding: 0 20px;
+}
+
+.menu__title-container {
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__restaurant-name {
+  font-family: "Shrikhand", cursive;
+  font-size: 34px;
+}
+
+.menu__title-container .title-icon:hover {
+  color: #9356dc;
+  -webkit-text-stroke-width: 0;
+}
+
+.menu__title-container .title-icon {
+  padding-right: 15px;
+  transition: all 0.3s ease-in;
+  font-size: 24px;
+  color: transparent;
+  -webkit-text-stroke-color: grey;
+  -webkit-text-stroke-width: 1px;
+}
+
+.course {
+  padding: 20px 0;
+}
+
+.course__title {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.course__title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin-top: 10px;
+  background-color: #99e2d0;
+}
+
+.course__items-container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-overlay {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.item-background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.item {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 10px 0;
+  border-radius: 15px;
+  animation-duration: 1s;
+  animation-name: slideIn;
+  position: relative;
+}
+
+.item:nth-of-type(2) {
+  animation-duration: 2s;
+}
+
+.item:nth-of-type(3) {
+  animation-duration: 3s;
+}
+
+.item:nth-of-type(4) {
+  animation-duration: 4s;
+}
+
+.item__title-container {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.item__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  margin: 0;
+}
+
+.item__desc-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.item___desc {
+  flex-basis: 10%;
+  flex-grow: 1;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #5a5a5a;
+  font-size: 16px;
+  margin: 0;
+}
+
+.item___price {
+  font-weight: 700;
+  margin: 0;
+}
+
+.order__button-container {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.order-button {
+  font-weight: 700;
+  background: #ff79da;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 20px 100px;
+  border: 0;
+  border-radius: 50px;
+  transition: all 250pms;
+  position: relative;
+  z-index: 1;
+}
+.order-button:hover {
+  transform: scale(1.1);
+}
+.order-button:hover:after {
+  opacity: 1;
+}
+.order-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ff60d3;
+  border-radius: inherit;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+  opacity: 0;
+}
+
+.item:hover .checkbox {
+  max-width: 200px;
+}
+
+.item:hover i.fa-check-circle {
+  animation-name: spin;
+  animation-duration: 0.3s;
+}
+
+.checkbox {
+  transition: max-width 0.3s ease-in-out;
+  background: #99e2d0;
+  position: relative;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  max-width: 0;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 20px;
+}
+
+.item__details {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.left-link {
+  color: black;
+  position: absolute;
+  left: 9vw;
+}
+
+.left-link:visited {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .restaurant-image-background {
+    height: 450px;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

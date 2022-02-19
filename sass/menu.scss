@@ -1,7 +1,8 @@
-@import "variable.css";
-@import "index/header.css";
-@import "index/footer.css";
+@import "variable";
+@import "includes/header";
+@import "includes/footer";
 
+$entry: 1s;
 @keyframes spin {
   from {
     transform: rotate(0);
@@ -22,10 +23,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-:root {
-  --entry: 1s;
 }
 
 h1,
@@ -101,7 +98,7 @@ span {
   width: 40px;
   height: 2px;
   margin-top: 10px;
-  background-color: var(--tertiary);
+  background-color: $tertiary;
 }
 
 .course__items-container {
@@ -130,21 +127,21 @@ span {
   overflow: hidden;
   margin: 10px 0;
   border-radius: 15px;
-  animation-duration: var(--entry);
+  animation-duration: $entry;
   animation-name: slideIn;
   position: relative;
 }
 
 .item:nth-of-type(2) {
-  animation-duration: calc(var(--entry) * 2);
+  animation-duration: calc($entry * 2);
 }
 
 .item:nth-of-type(3) {
-  animation-duration: calc(var(--entry) * 3);
+  animation-duration: calc($entry * 3);
 }
 
 .item:nth-of-type(4) {
-  animation-duration: calc(var(--entry) * 4);
+  animation-duration: calc($entry * 4);
 }
 
 .item__title-container {
@@ -189,24 +186,37 @@ span {
 
 .order-button {
   font-weight: 700;
-  background: $purple-gradient;
+  background: $secondary;
   font-family: $body-font;
   color: white;
   padding: 20px 100px;
   border: 0;
   border-radius: 50px;
-}
+  transition: all 250pms;
+  position: relative;
+  z-index: 1;
 
-.order-button:hover .order-button::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: darken(var($purple-gradient), 5);
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 250ms;
+  &:hover {
+    transform: scale(1.1);
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: darken($secondary, 5);
+    border-radius: inherit;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+    opacity: 0;
+  }
 }
 
 .item:hover .checkbox {

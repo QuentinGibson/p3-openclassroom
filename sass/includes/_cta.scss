@@ -16,8 +16,9 @@
 }
 
 .cta__button {
-  background-image: --purple-gradient;
   display: block;
+  position: relative;
+  background-color: $primary;
   margin: 0 auto;
   max-width: 350px;
   font-weight: 600;
@@ -26,8 +27,31 @@
   padding: 20px 20px;
   border-radius: 25px;
   border: 0;
+  z-index: 1;
   color: white;
   text-align: center;
+  transition: all 250ms;
+
+  &:hover {
+    transform: scale(1.1);
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+    background-color: darken($primary, 5);
+  }
 }
 
 .fa-map-marker {

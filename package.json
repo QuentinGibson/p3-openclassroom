@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass sass/**/**.scss:css ."
+    "build:sass": "sass sass/index.scss:css/index.css sass/menu.scss:css/menu.css",
+    "watch:sass": "sass sass/index.scss:css/index.css sass/menu.scss:css/menu.css -w",
+    "serve": "reload"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/QuentinGibson/p3-openclassroom/issues"
   },
-  "homepage": "https://github.com/QuentinGibson/p3-openclassroom#readme"
+  "homepage": "https://github.com/QuentinGibson/p3-openclassroom#readme",
+  "devDependencies": {
+    "reload": "^3.2.0"
+  }
 }
