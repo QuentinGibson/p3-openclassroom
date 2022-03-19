@@ -85,11 +85,11 @@ span {
 }
 
 .menu {
-  margin-top: -60px;
-  z-index: 2;
   background: #efefef;
-  position: relative;
   border-radius: 40px 40px 0 0;
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
 }
 
 .menu__container {
@@ -97,11 +97,11 @@ span {
 }
 
 .menu__title-container {
-  padding-top: 30px;
-  position: relative;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 30px;
+  position: relative;
 }
 
 .menu__restaurant-name {
@@ -110,17 +110,17 @@ span {
 }
 
 .menu__title-container .title-icon:hover {
-  color: #9356dc;
   -webkit-text-stroke-width: 0;
+  color: #9356dc;
 }
 
 .menu__title-container .title-icon {
-  padding-right: 15px;
-  transition: all 0.3s ease-in;
-  font-size: 24px;
-  color: transparent;
   -webkit-text-stroke-color: grey;
   -webkit-text-stroke-width: 1px;
+  color: transparent;
+  font-size: 24px;
+  padding-right: 15px;
+  transition: all 0.3s ease-in;
 }
 
 .course {
@@ -128,48 +128,52 @@ span {
 }
 
 .course__title {
-  text-transform: uppercase;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .course__title::after {
+  background-color: #99e2d0;
   content: "";
   display: block;
-  width: 40px;
   height: 2px;
   margin-top: 10px;
-  background-color: #99e2d0;
+  width: 40px;
 }
 
 .course__items-container {
-  padding: 0;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .item-overlay {
   overflow: hidden;
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 
 .item-background {
-  width: 100%;
   height: 100%;
   position: relative;
+  width: 100%;
 }
 
 .item {
+  animation-duration: 1s;
+  animation-name: slideIn;
   background: white;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow: hidden;
   margin: 10px 0;
-  border-radius: 15px;
-  animation-duration: 1s;
-  animation-name: slideIn;
+  overflow: hidden;
   position: relative;
+}
+
+.item__desc {
+  margin: 0;
 }
 
 .item:nth-of-type(2) {
@@ -184,9 +188,9 @@ span {
   animation-duration: 4s;
 }
 
-.item__title-container {
-  font-weight: 700;
-  font-size: 20px;
+.item__content-container {
+  flex-basis: 66%;
+  align-content: space-between;
 }
 
 .item__title {
@@ -195,22 +199,21 @@ span {
   margin: 0;
 }
 
-.item__desc-container {
+.item__price-container {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  justify-content: right;
+  align-items: flex-end;
 }
 
-.item___desc {
-  flex-basis: 10%;
-  flex-grow: 1;
-  max-width: 90%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.item__desc {
   color: #5a5a5a;
+  flex-grow: 1;
   font-size: 16px;
   margin: 0;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .item___price {
@@ -218,22 +221,22 @@ span {
   margin: 0;
 }
 
-.order__button-container {
-  padding: 30px 0;
+.order-button__container {
   display: flex;
   justify-content: center;
+  padding: 30px 0;
 }
 
 .order-button {
-  font-weight: 700;
   background: #ff79da;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  padding: 20px 100px;
-  border: 0;
   border-radius: 50px;
-  transition: all 250pms;
+  border: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding: 20px 100px;
   position: relative;
+  transition: all 250pms;
   z-index: 1;
 }
 .order-button:hover {
@@ -243,18 +246,18 @@ span {
   opacity: 1;
 }
 .order-button:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-color: #ff60d3;
   border-radius: inherit;
+  bottom: 0;
+  content: "";
+  left: 0;
   opacity: 0;
-  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
   transition: opacity 250ms;
-  opacity: 0;
+  z-index: -1;
 }
 
 .item:hover .checkbox {
@@ -262,20 +265,20 @@ span {
 }
 
 .item:hover i.fa-check-circle {
-  animation-name: spin;
   animation-duration: 0.3s;
+  animation-name: spin;
 }
 
 .checkbox {
-  transition: max-width 0.3s ease-in-out;
-  background: #99e2d0;
-  position: relative;
-  width: 80px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background: #99e2d0;
+  display: flex;
   flex-shrink: 1;
+  justify-content: center;
   max-width: 0;
+  position: relative;
+  transition: max-width 0.3s ease-in-out;
+  width: 80px;
 }
 
 .fa-check-circle {
@@ -284,15 +287,17 @@ span {
 }
 
 .item__details {
-  width: 100%;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   padding: 10px 20px;
+  width: 100%;
 }
 
 .left-link {
   color: black;
-  position: absolute;
   left: 9vw;
+  position: absolute;
 }
 
 .left-link:visited {
@@ -302,6 +307,12 @@ span {
 @media (min-width: 768px) {
   .restaurant-image-background {
     height: 450px;
+  }
+}
+@media (min-width: 769px) {
+  .course__items-container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

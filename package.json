@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/QuentinGibson/p3-openclassroom#readme",
   "devDependencies": {
-    "reload": "^3.2.0"
-  }
+    "reload": "^3.2.0",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {}
 }
