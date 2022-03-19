@@ -314,6 +314,10 @@ span {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .item {
+    flex-basis: 33%;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
