@@ -207,10 +207,10 @@ span {
 
 .item__desc {
   color: #5a5a5a;
-  flex-grow: 1;
   font-size: 16px;
   margin: 0;
-  max-width: 90%;
+  flex: 90% 0 0;
+  max-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -313,6 +313,7 @@ span {
   .course__items-container {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .item {
