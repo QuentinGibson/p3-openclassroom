@@ -281,6 +281,9 @@ img {
     flex-direction: row;
     justify-content: space-between;
   }
+  .works__steps li {
+    width: 30%;
+  }
 }
 
 .step-card {

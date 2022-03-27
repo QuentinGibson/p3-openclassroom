@@ -5,6 +5,10 @@
   @media (min-width: 1080px) {
     flex-direction: row;
     justify-content: space-between;
+
+    li {
+      width: 30%;
+    }
   }
 }
 
