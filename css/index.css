@@ -276,6 +276,12 @@ img {
   flex-direction: column;
   padding: 0;
 }
+@media (min-width: 1080px) {
+  .works__steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .step-card {
   align-items: center;
@@ -326,12 +332,6 @@ img {
   color: #9356dc;
 }
 
-@media (min-width: 1080px) {
-  .work__steps {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 footer {
   background-color: #4a4a4a;
   color: white;

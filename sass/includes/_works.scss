@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  @media (min-width: 1080px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .step-card {
@@ -51,11 +55,4 @@
 
 #works li:hover .step-card__content-icon {
   color: $primary;
-}
-
-@media (min-width: 1080px) {
-  .work__steps {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
