@@ -43,6 +43,8 @@
 .order-button {
   color: white;
   background: #ff79da;
+  padding: 20px 100px;
+  border-radius: 25px;
 
   &:after {
     background-color: darken(#ff79da, 5);
