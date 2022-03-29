@@ -1,0 +1,50 @@
+.button {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 350px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  padding: 20px 20px;
+  border-radius: 25px;
+  border: 0;
+  z-index: 1;
+  text-align: center;
+  transition: all 250ms;
+  &:hover {
+    transform: scale(1.1);
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+}
+
+.cta__button {
+  background-color: $primary;
+  color: white;
+  &:after {
+    background-color: darken($primary, 5);
+  }
+}
+
+.order-button {
+  color: white;
+  background: #ff79da;
+
+  &:after {
+    background-color: darken(#ff79da, 5);
+  }
+}
