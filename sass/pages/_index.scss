@@ -1,11 +1,6 @@
 @import "../utils/variable";
-@import "../components/header";
-@import "../components/footer";
-
-a {
-  text-decoration: none;
-  color: initial;
-}
+@import "../layouts/header";
+@import "../layouts/footer";
 
 .container {
   padding: 10px 20px;
@@ -14,10 +9,6 @@ a {
 .section-heading {
   font-weight: 700;
   font-size: 24px;
-}
-
-#cta .section-container {
-  padding: 0 40px;
 }
 
 .cta__heading-text {

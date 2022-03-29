@@ -1,6 +1,7 @@
 @import "../utils/variable";
-@import "../components/header";
-@import "../components/footer";
+@import "../layouts/header";
+@import "../layouts/footer";
+
 $entry: 1s;
 @keyframes spin {
   from {
