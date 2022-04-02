@@ -1,12 +1,18 @@
 $title-font: "Shrikhand", cursive;
 $body-font: "Roboto", sans-serif;
 $grey-background: #d2d2d2;
-$box-shadow: rgba(0, 0, 0, 0.2);
+$box-shadow-color: rgba(0, 0, 0, 0.2);
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
 $text-dark-grey: #313131;
 $light-grey-text: #5a5a5a;
-$purple-gradient: linear-gradient(180deg, #ec73da 0%, #a25bdc 100%);
+$btn-background-color: linear-gradient(180deg, $secondary 0%, $primary 100%);
+$btn-background-darkened: linear-gradient(
+  180deg,
+  darken($secondary, 5%) 0%,
+  darken($primary, 5%) 100%
+);
 $dark-green: #008665;
 $green-background: #99e2d0;
+$heart-color: linear-gradient(10deg, $secondary 0%, $primary 50%);

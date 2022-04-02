@@ -2,11 +2,11 @@
   display: block;
   position: relative;
   margin: 0 auto;
-  max-width: 350px;
   font-weight: 600;
+  width: 300px;
+  padding: 20px 0;
   font-size: 18px;
   letter-spacing: 1.5px;
-  padding: 20px 20px;
   border-radius: 25px;
   border: 0;
   z-index: 1;
@@ -15,6 +15,7 @@
   &:hover {
     transform: scale(1.1);
     &:after {
+      background-color: $btn-background-darkened;
       opacity: 1;
     }
   }
@@ -33,20 +34,18 @@
 }
 
 .cta__button {
-  background-color: $primary;
+  background: $btn-background-color;
   color: white;
   &:after {
-    background-color: darken($primary, 5);
   }
 }
 
 .order-button {
   color: white;
-  background: #ff79da;
-  padding: 20px 100px;
+  background: $btn-background-color;
   border-radius: 25px;
 
   &:after {
-    background-color: darken(#ff79da, 5);
+    background-color: $btn-background-darkened;
   }
 }

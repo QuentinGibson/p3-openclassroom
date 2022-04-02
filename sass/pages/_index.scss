@@ -127,7 +127,7 @@
 }
 
 .restaurant-card {
-  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+  box-shadow: 0px 0px 10px 0px $box-shadow-color;
   border-radius: 17px;
   margin: 20px 0;
 }
@@ -180,7 +180,7 @@ img {
 }
 
 .restaurant-card .restaurant-card-icon:hover {
-  color: #9356dc;
+  color: $heart-color;
   -webkit-text-stroke-color: transparent;
   -webkit-text-stroke-width: 0;
 }
@@ -203,6 +203,7 @@ img {
 
 .status {
   padding: 5px 20px;
+  box-shadow: 0 0 10px 0 $box-shadow-color;
   background-color: $green-background;
   color: $dark-green;
 }
@@ -257,10 +258,13 @@ img {
   align-items: center;
   display: flex;
   border-radius: 25px;
-  box-shadow: 0 3px 6px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0 3px 6px 2px $box-shadow-color;
   margin: 10px 0;
   padding: 10px;
   height: 80px;
+  &:hover {
+    background-color: lighten($primary, 30);
+  }
 }
 
 .works__steps li::marker {

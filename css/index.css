@@ -86,11 +86,11 @@ header {
   display: block;
   position: relative;
   margin: 0 auto;
-  max-width: 350px;
   font-weight: 600;
+  width: 300px;
+  padding: 20px 0;
   font-size: 18px;
   letter-spacing: 1.5px;
-  padding: 20px 20px;
   border-radius: 25px;
   border: 0;
   z-index: 1;
@@ -101,6 +101,7 @@ header {
   transform: scale(1.1);
 }
 .button:hover:after {
+  background-color: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
   opacity: 1;
 }
 .button:after {
@@ -117,21 +118,16 @@ header {
 }
 
 .cta__button {
-  background-color: #9356dc;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
 }
-.cta__button:after {
-  background-color: #8641d8;
-}
-
 .order-button {
   color: white;
-  background: #ff79da;
-  padding: 20px 100px;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   border-radius: 25px;
 }
 .order-button:after {
-  background-color: #ff60d3;
+  background-color: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
 }
 
 footer {
@@ -340,7 +336,7 @@ img {
 }
 
 .restaurant-card .restaurant-card-icon:hover {
-  color: #9356dc;
+  color: linear-gradient(10deg, #ff79da 0%, #9356dc 50%);
   -webkit-text-stroke-color: transparent;
   -webkit-text-stroke-width: 0;
 }
@@ -363,6 +359,7 @@ img {
 
 .status {
   padding: 5px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   background-color: #99e2d0;
   color: #008665;
 }
@@ -417,10 +414,13 @@ img {
   align-items: center;
   display: flex;
   border-radius: 25px;
-  box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.2);
   margin: 10px 0;
   padding: 10px;
   height: 80px;
+}
+.step-card:hover {
+  background-color: #e4d5f6;
 }
 
 .works__steps li::marker {
@@ -466,11 +466,11 @@ img {
   display: block;
   position: relative;
   margin: 0 auto;
-  max-width: 350px;
   font-weight: 600;
+  width: 300px;
+  padding: 20px 0;
   font-size: 18px;
   letter-spacing: 1.5px;
-  padding: 20px 20px;
   border-radius: 25px;
   border: 0;
   z-index: 1;
@@ -481,6 +481,7 @@ img {
   transform: scale(1.1);
 }
 .button:hover:after {
+  background-color: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
   opacity: 1;
 }
 .button:after {
@@ -497,21 +498,16 @@ img {
 }
 
 .cta__button {
-  background-color: #9356dc;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
 }
-.cta__button:after {
-  background-color: #8641d8;
-}
-
 .order-button {
   color: white;
-  background: #ff79da;
-  padding: 20px 100px;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   border-radius: 25px;
 }
 .order-button:after {
-  background-color: #ff60d3;
+  background-color: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
 }
 
 header {
