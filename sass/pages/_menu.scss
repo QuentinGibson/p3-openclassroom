@@ -52,7 +52,9 @@ $entry: 1s;
 }
 .menu__title-container .title-icon:hover {
   -webkit-text-stroke-width: 0;
-  color: $primary;
+  background: $heart-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu__title-container .title-icon {
   -webkit-text-stroke-color: grey;
@@ -96,6 +98,7 @@ $entry: 1s;
   animation-duration: $entry;
   animation-name: slideIn;
   background: white;
+  box-shadow: 0 0 4px 0 $box-shadow-color;
   border-radius: 15px;
   display: flex;
   flex-direction: row;

@@ -336,7 +336,7 @@ img {
 }
 
 .restaurant-card .restaurant-card-icon:hover {
-  color: linear-gradient(10deg, #ff79da 0%, #9356dc 50%);
+  color: linear-gradient(20deg, #ff79da 0%, #9356dc 50%);
   -webkit-text-stroke-color: transparent;
   -webkit-text-stroke-width: 0;
 }
@@ -612,7 +612,9 @@ footer i {
 
 .menu__title-container .title-icon:hover {
   -webkit-text-stroke-width: 0;
-  color: #9356dc;
+  background: linear-gradient(20deg, #ff79da 0%, #9356dc 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu__title-container .title-icon {
@@ -664,6 +666,7 @@ footer i {
   animation-duration: 1s;
   animation-name: slideIn;
   background: white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   display: flex;
   flex-direction: row;
