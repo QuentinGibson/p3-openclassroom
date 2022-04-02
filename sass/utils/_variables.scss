@@ -7,7 +7,11 @@ $secondary: #ff79da;
 $tertiary: #99e2d0;
 $text-dark-grey: #313131;
 $light-grey-text: #5a5a5a;
-$btn-background-color: linear-gradient(180deg, $secondary 0%, $primary 100%);
+$primary-btn-background-color: linear-gradient(
+  180deg,
+  $secondary 0%,
+  $primary 100%
+);
 $btn-background-darkened: linear-gradient(
   180deg,
   darken($secondary, 5%) 0%,

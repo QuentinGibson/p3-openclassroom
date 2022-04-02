@@ -1,4 +1,4 @@
-.button {
+.btn {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -15,7 +15,7 @@
   &:hover {
     transform: scale(1.1);
     &:after {
-      background-color: $btn-background-darkened;
+      background: $btn-background-darkened;
       opacity: 1;
     }
   }
@@ -33,19 +33,7 @@
   }
 }
 
-.cta__button {
-  background: $btn-background-color;
+.btn-primary {
   color: white;
-  &:after {
-  }
-}
-
-.order-button {
-  color: white;
-  background: $btn-background-color;
-  border-radius: 25px;
-
-  &:after {
-    background-color: $btn-background-darkened;
-  }
+  background: $primary-btn-background-color;
 }

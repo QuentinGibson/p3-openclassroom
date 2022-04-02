@@ -82,7 +82,7 @@ header {
   font-size: 30px;
 }
 
-.button {
+.btn {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -97,14 +97,14 @@ header {
   text-align: center;
   transition: all 250ms;
 }
-.button:hover {
+.btn:hover {
   transform: scale(1.1);
 }
-.button:hover:after {
-  background-color: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
+.btn:hover:after {
+  background: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
   opacity: 1;
 }
-.button:after {
+.btn:after {
   content: "";
   position: absolute;
   border-radius: inherit;
@@ -117,17 +117,9 @@ header {
   transition: opacity 250ms;
 }
 
-.cta__button {
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  color: white;
-}
-.order-button {
+.btn-primary {
   color: white;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  border-radius: 25px;
-}
-.order-button:after {
-  background-color: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
 }
 
 footer {
@@ -464,7 +456,7 @@ img {
   color: #9356dc;
 }
 
-.button {
+.btn {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -479,14 +471,14 @@ img {
   text-align: center;
   transition: all 250ms;
 }
-.button:hover {
+.btn:hover {
   transform: scale(1.1);
 }
-.button:hover:after {
-  background-color: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
+.btn:hover:after {
+  background: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
   opacity: 1;
 }
-.button:after {
+.btn:after {
   content: "";
   position: absolute;
   border-radius: inherit;
@@ -499,17 +491,9 @@ img {
   transition: opacity 250ms;
 }
 
-.cta__button {
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  color: white;
-}
-.order-button {
+.btn-primary {
   color: white;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  border-radius: 25px;
-}
-.order-button:after {
-  background-color: linear-gradient(180deg, #ff60d3 0%, #8641d8 100%);
 }
 
 header {
