@@ -180,7 +180,9 @@ img {
 }
 
 .restaurant-card .restaurant-card-icon:hover {
-  color: $heart-color;
+  background: $heart-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: transparent;
   -webkit-text-stroke-width: 0;
 }
