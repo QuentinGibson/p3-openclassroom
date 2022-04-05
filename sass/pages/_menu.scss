@@ -123,12 +123,12 @@ $entry: 1s;
   margin: 0;
 }
 .item__content-container {
-  flex-basis: 66%;
   align-content: space-between;
+  flex: 1;
+  overflow: hidden;
 }
 .item__title {
   font-family: $body-font;
-  max-width: 150px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -144,8 +144,7 @@ $entry: 1s;
   color: $light-grey-text;
   font-size: 16px;
   margin: 0;
-  flex: 90% 0 0;
-  max-width: 150px;
+  flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -160,7 +159,7 @@ $entry: 1s;
   padding: 30px 0;
 }
 .item:hover .checkbox {
-  max-width: 200px;
+  max-width: 80px;
 }
 .item:hover i.fa-check-circle {
   animation-duration: 0.3s;
@@ -170,7 +169,7 @@ $entry: 1s;
   align-items: center;
   background: $tertiary;
   display: flex;
-  flex-shrink: 1;
+  flex: 1;
   justify-content: center;
   max-width: 0;
   position: relative;
@@ -183,10 +182,11 @@ $entry: 1s;
 }
 .item__details {
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   flex-direction: row;
   padding: 10px 20px;
-  width: 100%;
+  flex: 1;
 }
 .left-link {
   color: black;

@@ -679,13 +679,13 @@ footer i {
 }
 
 .item__content-container {
-  flex-basis: 66%;
   align-content: space-between;
+  flex: 1;
+  overflow: hidden;
 }
 
 .item__title {
   font-family: "Roboto", sans-serif;
-  max-width: 150px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -703,8 +703,7 @@ footer i {
   color: #5a5a5a;
   font-size: 16px;
   margin: 0;
-  flex: 90% 0 0;
-  max-width: 150px;
+  flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -722,7 +721,7 @@ footer i {
 }
 
 .item:hover .checkbox {
-  max-width: 200px;
+  max-width: 80px;
 }
 
 .item:hover i.fa-check-circle {
@@ -734,7 +733,7 @@ footer i {
   align-items: center;
   background: #99e2d0;
   display: flex;
-  flex-shrink: 1;
+  flex: 1;
   justify-content: center;
   max-width: 0;
   position: relative;
@@ -749,10 +748,11 @@ footer i {
 
 .item__details {
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   flex-direction: row;
   padding: 10px 20px;
-  width: 100%;
+  flex: 1;
 }
 
 .left-link {
